@@ -5,6 +5,10 @@
       :options="cmOptions"
       :closetag="true"
     />
+    <h2>プレビュー</h2>
+    <div class="preview">
+      <div v-html="code"></div>
+    </div>
   </div>
 </template>
 
@@ -22,7 +26,8 @@ export default {
   },
   data () {
     return {
-      code: '<div>ほげ</div>',
+      // code: '<div>ほげ</div>',
+      code: '<!-- コメント -->\n<div class="hoge">\n\tほげ\n</div>\n<ul style="padding: 10px;">\n\t<li>あいう</li>\n\t<li>かきく</li>\n\t<li>さしす</li>\n\t<li>たちつ</li>\n</ul>',
       cmOptions: {
         tabSize: 4,
         indentUnit: 4,
@@ -38,3 +43,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.preview {
+  background: #fcfcfc;
+  border: 1px solid #666;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #666;
+  font-size: 0.9rem;
+}
+</style>
