@@ -12,8 +12,6 @@ import { codemirror } from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 // import language js
 import 'codemirror/mode/htmlmixed/htmlmixed.js'
-// import theme style
-import 'codemirror/theme/base16-light.css'
 
 export default {
   components: {
@@ -25,7 +23,7 @@ export default {
       cmOptions: {
         tabSize: 4,
         mode: 'text/html',
-        theme: 'base16-light',
+        theme: 'default',
         lineNumbers: true,
         line: true
       }
