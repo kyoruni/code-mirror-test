@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    hoge
+    <CodeMirror/>
   </div>
 </template>
 
 <script>
+import CodeMirror from '@/components/CodeMirror'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    CodeMirror
+  }
 }
 </script>
 
