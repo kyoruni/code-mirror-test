@@ -22,10 +22,13 @@ export default {
       code: '<div>ほげ</div>',
       cmOptions: {
         tabSize: 4,
+        indentUnit: 4,
+        indentWithTabs: true, // インデントするとき、スペースをtabに置き換える
         mode: 'text/html',
         theme: 'default',
         lineNumbers: true,
-        line: true
+        line: true,
+        dragDrop: false // ドラッグ&ドロップでファイル追加できないようにする
       }
     }
   }
