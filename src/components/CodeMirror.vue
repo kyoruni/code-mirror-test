@@ -17,6 +17,7 @@ import { codemirror } from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 // import language js
 import 'codemirror/mode/htmlmixed/htmlmixed.js'
+
 // import addon
 import 'codemirror/addon/edit/closetag.js'
 import 'codemirror/addon/lint/lint.css'
@@ -35,7 +36,7 @@ export default {
         tabSize: 4,
         indentUnit: 4,
         indentWithTabs: true, // インデントするとき、スペースをtabに置き換える
-        mode: 'text/html',
+        mode: 'htmlmixed',
         theme: 'default',
         lineNumbers: true,
         lint: true,
