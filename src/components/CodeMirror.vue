@@ -19,6 +19,9 @@ import 'codemirror/lib/codemirror.css'
 import 'codemirror/mode/htmlmixed/htmlmixed.js'
 // import addon
 import 'codemirror/addon/edit/closetag.js'
+import 'codemirror/addon/lint/lint.css'
+import 'codemirror/addon/lint/lint.js'
+import 'codemirror/addon/lint/html-lint.js'
 
 export default {
   components: {
@@ -35,6 +38,13 @@ export default {
         mode: 'text/html',
         theme: 'default',
         lineNumbers: true,
+        lint: true,
+        gutters: [
+          'CodeMirror-lint-markers',
+          'CodeMirror-linenumbers',
+          'CodeMirror-foldgutter'
+        ],
+        foldGutter: true,
         line: true,
         dragDrop: false, // ドラッグ&ドロップでファイル追加できないようにする
         autoCloseTags: true // addon: closetag を有効にする
