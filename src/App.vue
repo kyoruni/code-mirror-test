@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Vue Code Mirror テスト</h1>
+    <h1>テスト</h1>
     <CodeMirror/>
   </div>
 </template>
